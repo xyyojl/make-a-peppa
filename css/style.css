@@ -4,10 +4,27 @@
     box-sizing: border-box;
     transition: all 1s;
 }
+.mask{
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #e65f5f;
+}
+.mask button{
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+}
 
 .code-wrapper {
     position: fixed;
-    /* display: flex; */
     left: 0;
     width: 50%;
     height: 100%;
@@ -17,11 +34,11 @@
 #code {
     width: 100%;
     height: 100%;
-    /* height: 3000px; */
     border: 1px solid #aaa;
     padding: 16px;
     overflow: hidden;
 }
+
 
 .preview-wrapper{
     position: fixed;
@@ -37,6 +54,236 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.peppa-container {
+    position: relative;
+    width: 300px;
+    height: 460px;
+}
+.peppa-container .peppa-head>div {
+    position: absolute;
+}
+.peppa-head {
+    position: relative;
+    width: 250px;
+    height: 252px;
+    left: 24px;
+}
+
+.face {
+    right: 0;
+    top: 50px;
+    width: 187px;
+    height: 206px;
+}
+.face::before,
+.face::after{
+    content: '';
+    position: absolute;
+}
+
+.face::before { 
+    top: 1px;
+    left: -94px; 
+    width: 180px;
+    height: 100px;
+}
+.face::after {
+    left: -2px;
+    top: 6px;
+    width: 102px;
+    height: 110px;
+}
+.nose {
+    right: 190px;
+    top: 20px;
+    width: 51px;
+    height: 70px;
+}
+.nostril {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+}
+.ear {
+    width: 36px;
+    height: 64px;
+}
+.eye {
+    right: 120px;
+    top: 36px;
+    width: 34px;
+    height: 34px;
+}
+.eye::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+}
+.cheek {
+    right: 20px;
+    top: 114px;
+    width: 49px;
+    height: 59px;
+}
+.mouth {
+    width: 97px;
+    right: 73px;
+    top: 152px;
+    transform: rotate(18deg);
+}
+.mouth>div {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mouth .mouth-bottom {
+    width: 97px;
+    height: 45px;
+}
+.mouth .mouth-middle {
+    width: 97px;
+    height: 27px;
+}
+.mouth .mouth-middle::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: -7px;
+    width: 97px;
+    height: 15px;
+}
+.peppa-body {
+    position: relative;
+}
+.peppa-body>div {
+    position: absolute;
+}
+.body {
+    margin-left: 58px;
+    width: 227px;
+    height: 209px;
+    z-index: -1;
+    top: -85px;
+}
+.hand.left{
+    width: 78px;
+    height: 12px;
+    left: 10px;
+    top: 20px;
+    z-index: -2;
+}
+.hand.left::before,
+.hand.left::after{
+    content: '';
+    position: absolute;
+}
+.hand.left::before {
+    width: 28px;
+    height: 9px;
+    top: -8px;
+    left: 8px;
+}
+.hand.left::after {
+    right: 46px;
+    top: 8px;
+    width: 20px;
+    height: 9px;
+}
+.hand.right {
+    width: 78px;
+    height: 12px;
+    right: -32px;
+}
+.hand.right::before,
+.hand.right::after{
+    content: '';
+    position: absolute;
+}
+.hand.right::before {
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 9px;
+}
+.hand.right::after {
+    width: 28px;
+    height: 9px;
+    top: -8px;
+    right: 5px;
+}
+.tail {
+    box-sizing: content-box;
+    top: 54px;
+    right: -15px;
+    width: 7px;
+    height: 11px;
+    z-index: -2;
+}
+.tail::before {
+    content: '';
+    position: absolute;
+    left: -18px;
+    bottom: -12px;
+    width: 26px;
+    height: 8px;
+}
+.tail-circle {
+    box-sizing: content-box;
+    position: absolute;
+    right: -13px;
+    bottom: -18px;
+    width: 10px;
+    height: 20px;
+    border-right: none;
+}
+.tail-circle::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: 20px;
+    width: 8px;
+    height: 8px;
+}
+.peppa-footer {
+    position: absolute;
+    top: 376px;
+}
+.peppa-footer>div {
+    position: absolute;
+}
+.foot {
+    top: 0;
+    width: 11px;
+    height: 52px;
+}
+.foot.left {
+    left: 125px;
+}
+.foot.right {
+    left: 218px;
+}
+.shoes {
+    top: 40px;
+    width: 51px;
+    height: 14px;
+}
+.shoes.left {
+    left: 90px;
+}
+.shoes.right {
+    left: 182px;
+}
+.peppa-shadow {
+    left: 52px;
+    top: 20px;
+    width: 240px;
+    height: 47px;
+    z-index: -1;
 }
 
 .actions{
@@ -78,6 +325,9 @@
         border: none;
         padding: 16px;
     }
+    #code {
+        overflow: auto;
+    }
     .preview-wrapper{
         position: fixed;
         display: flex;
@@ -96,7 +346,6 @@
         width: 320px;
     }
     .actions{
-        /* top: 20px; */
         top: 70%;
         right: 0;
         margin-right: 10px;

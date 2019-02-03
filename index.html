@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <div class="mask">
+        <button>请开始你的表演</button>
+    </div>
     <div class="code-wrapper">
         <pre id="code"></pre>
     </div>
@@ -58,17 +61,11 @@
         <button data-speed="slow">慢速</button>
         <button data-speed="normal" class="active">中速</button>
         <button data-speed="fast">快速</button>
-        <!-- <button data-speed="end">结束</button> -->
     </div>
-    <!-- <audio src="Peppa.mp3"  controls autoplay="autoplay" loop id="auto">
-    你的浏览器不支持audio标签
-    </audio> -->
-      
-    <!-- <audio preload="" loop="loop" id="player" src="./Peppa.mp3"></audio> -->
+    <audio preload="" loop="loop" id="player" src="./Peppa.mp3"></audio>
     <script src="./vendor/jquery.min.js"></script>
     <script src="./vendor/prism/prism.js"></script>
     <script src="./js/main.js"></script>
-    <script src="https://cdn.bootcss.com/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
 </body>
 
 </html>
