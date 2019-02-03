@@ -325,9 +325,6 @@
         border: none;
         padding: 16px;
     }
-    #code {
-        overflow: auto;
-    }
     .preview-wrapper{
         position: fixed;
         display: flex;

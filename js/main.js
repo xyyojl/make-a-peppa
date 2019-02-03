@@ -67,7 +67,7 @@ $('.mask button').on('click',function(){
 
 .face::before { 
     border: 6px solid #ef96c2;
-    border-radius: 150% 61% 0% 80%
+    border-radius:150% 61% 0% 80%
     /130% 6% 0% 68%;
     transform: rotate(-5deg);
     background-color: #FFB3DA;
@@ -112,7 +112,7 @@ $('.mask button').on('click',function(){
 .ear {
     border: 6px solid #ef96c2;
     background-color: #FFB3DA;
-    border-radius: 50% 50% 50% 50%
+    border-radius: 50%
     / 35% 40% 50% 50%;
 }
 
@@ -169,17 +169,18 @@ $('.mask button').on('click',function(){
 .mouth .mouth-bottom {
     border: 6px solid #d44b81;
     background-color: #000;
-    border-radius: 50%/0 0 100% 100%;
+    border-radius: 50%
+    /0 0 100% 100%;
 }
 .mouth .mouth-middle {
     border: 6px solid #d44b81;
     background-color: #ffb3da;
-    border-radius: 0% 0% 50% 50%
+    border-radius:0% 0% 50% 50%
     / 0% 0% 100% 100%;
 }
 .mouth .mouth-middle::before {
     background-color: #FFB3DA;
-    border-radius: 0% 0% 50% 50%
+    border-radius:0% 0% 50% 50%
     / 0% 0% 100% 100%;
 }
 
@@ -190,7 +191,8 @@ $('.mask button').on('click',function(){
 .body {
     background-color: #EB5B50;
     border: 6px solid #E33B32;
-    border-radius: 50%/ 100% 100% 0% 0%;
+    border-radius: 50%
+    / 100% 100% 0% 0%;
 }
 
 /*
@@ -198,7 +200,7 @@ $('.mask button').on('click',function(){
 */
 
 .hand.left{
-    border-radius: 100% 100% 100% 17%
+    border-radius:100% 100% 100% 17%
     / 100% 90% 16% 90%;
     background-color: #FFBADF;
     transform: rotate(-35deg);
@@ -209,13 +211,13 @@ $('.mask button').on('click',function(){
 */
 
 .hand.left::before {
-    border-radius: 100% 100% 100% 35%
+    border-radius:100% 100% 100% 35%
     / 100% 90% 16% 90%;
     background-color: #ffbadf;
     transform: rotate(28deg);
 }
 .hand.left::after {
-    border-radius: 60% 59% 65% 90%
+    border-radius:60% 59% 65% 90%
     / 100% 90% 89% 90%;
     transform: rotate(139deg);
     background-color: #ffbadf;
@@ -226,20 +228,20 @@ $('.mask button').on('click',function(){
 */
 
 .hand.right {
-    border-radius: 100% 100% 15% 17%
+    border-radius:100% 100% 15% 17%
     / 99% 92% 90% 90%;
     transform: rotate(28deg);
     background-color: #FFBADF;  
 }
 .hand.right::before {
     background-color: #ffbadf;
-    border-radius: 60% 59% 65% 90%
+    border-radius:60% 59% 65% 90%
     / 100% 90% 89% 90%;
     transform: rotate(-139deg);
 }
 .hand.right::after {
     background-color: #ffbadf;
-    border-radius: 100% 100% 100% 35%
+    border-radius:100% 100% 100% 35%
     / 100% 90% 16% 90%;
     transform: rotate(-28deg);
 }
@@ -255,12 +257,14 @@ $('.mask button').on('click',function(){
 }
 .tail::before {
     background-color: #FFBADF;
-    border-radius: 50%/ 0% 0% 100% 100%;
+    border-radius: 50%
+    / 0% 0% 100% 100%;
     transform: rotate(-9deg);
 }
 .tail-circle {
     border: 8px solid #FFBADF;
-    border-radius: 100% 0 0 100%/50%;
+    border-radius: 100% 0 0 100%
+    /50%;
     transform: rotate(-102deg);
 }
 .tail-circle::after {
@@ -283,7 +287,7 @@ $('.mask button').on('click',function(){
 */
 
 .shoes {
-    border-radius: 58% 187% 180% 50%
+    border-radius:58% 187% 180% 50%
     / 130% 123% 113% 100%;
     background-color: #000;
 }
@@ -294,7 +298,7 @@ $('.mask button').on('click',function(){
 
 .peppa-shadow {
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0,0,0,.3);
 }
 
 /* 
