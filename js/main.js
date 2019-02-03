@@ -52,7 +52,6 @@ $('.mask button').on('click',function(){
 
 .preview-wrapper .wrapper {
     background-color: #84CEF5;
-    z-index: -3;
 }
 /*
 * 先画佩奇的头
@@ -200,8 +199,6 @@ $('.mask button').on('click',function(){
 */
 
 .hand.left{
-    border-radius:100% 100% 100% 17%
-    / 100% 90% 16% 90%;
     background-color: #FFBADF;
     transform: rotate(-35deg);
 }
@@ -211,8 +208,6 @@ $('.mask button').on('click',function(){
 */
 
 .hand.left::before {
-    border-radius:100% 100% 100% 35%
-    / 100% 90% 16% 90%;
     background-color: #ffbadf;
     transform: rotate(28deg);
 }
@@ -228,8 +223,6 @@ $('.mask button').on('click',function(){
 */
 
 .hand.right {
-    border-radius:100% 100% 15% 17%
-    / 99% 92% 90% 90%;
     transform: rotate(28deg);
     background-color: #FFBADF;  
 }
@@ -241,8 +234,6 @@ $('.mask button').on('click',function(){
 }
 .hand.right::after {
     background-color: #ffbadf;
-    border-radius:100% 100% 100% 35%
-    / 100% 90% 16% 90%;
     transform: rotate(-28deg);
 }
 
@@ -298,12 +289,12 @@ $('.mask button').on('click',function(){
 
 .peppa-shadow {
     border-radius: 50%;
-    background-color: rgba(0,0,0,.3);
+    background-color:rgba(0,0,0,.3);
 }
 
 /* 
 * 好了，这只小猪佩奇送给你，喜欢吗？
-* 小猪佩奇给大家贺新年,猪事顺利，猪笼入水!!!
+* 小猪佩奇给大家贺新年,猪事顺利，猪笼入水!
 */    
     `
     writeCode('', code);

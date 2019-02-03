@@ -54,6 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -3;
 }
 
 .peppa-container {
@@ -176,6 +177,8 @@
     left: 10px;
     top: 20px;
     z-index: -2;
+    border-radius:100% 100% 100% 17%
+    / 100% 90% 16% 90%;
 }
 .hand.left::before,
 .hand.left::after{
@@ -187,6 +190,8 @@
     height: 9px;
     top: -8px;
     left: 8px;
+    border-radius:100% 100% 100% 35%
+    / 100% 90% 16% 90%;
 }
 .hand.left::after {
     right: 46px;
@@ -198,6 +203,8 @@
     width: 78px;
     height: 12px;
     right: -32px;
+    border-radius:100% 100% 15% 17%
+    / 99% 92% 90% 90%;
 }
 .hand.right::before,
 .hand.right::after{
@@ -215,6 +222,8 @@
     height: 9px;
     top: -8px;
     right: 5px;
+    border-radius:100% 100% 100% 35%
+    / 100% 90% 16% 90%;
 }
 .tail {
     box-sizing: content-box;
