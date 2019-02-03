@@ -32,11 +32,18 @@
     padding: 16px;
     padding-left: 0;
 }
+.preview-wrapper .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .actions{
     position: absolute;
     top: 20px;
-    left: 400px;
+    right: 50%;
+    margin-right: 23.3px;
     display: flex;
     flex-direction: column;
 }
@@ -84,8 +91,37 @@
     .preview-wrapper .wrapper{
         transform: scale(0.8) translateY(-50px);
     }
-  }
-  
+    .peppa-container{
+        top: 64px;
+        width: 320px;
+    }
+    .actions{
+        /* top: 20px; */
+        top: 70%;
+        right: 0;
+        margin-right: 10px;
+    }
+    .hand.right {
+        right: -12px;
+    }
+    .tail {
+        right: 7px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .code-wrapper,
+    #code {
+        padding: 4px;
+    }
+    .actions > button {
+        font-size: 12px;
+        padding: 4px 8px;
+        margin: 6px;
+    }
+    .actions{
+        margin-right: 0;
+    }
+}
 /* .preview-wrapper{
     transform: scale(0.8) translateY(-50px);
 } */

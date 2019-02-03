@@ -20,18 +20,11 @@
     function writeCode(prefix, code, fn) {
         let codeContainer = $('#code');
         let styleTag = $('#styleTag');
-        /* let codeContainer = document.querySelector('#code');
-        let styleTag = document.querySelector('#styleTag'); */
         let n = 0;
         let id = setTimeout(function run() {
             n += 1;
-            /* codeContainer.innerHTML = code.substring(0,n);
-            styleTag.innerHTML = code.substring(0,n);
-            codeContainer.scrollTop = codeContainer.scrollHeight; */
             codeContainer.html(Prism.highlight(prefix+code.substring(0,n), Prism.languages.css));
             styleTag.html(code.substring(0, n));
-            // codeContainer.scrollTop = codeContainer.scrollHeight;
-            // codeContainer.prop("scrollHeight")
             // console.log(codeContainer[0].scrollHeight)
             codeContainer.scrollTop(codeContainer.prop("scrollHeight"));
             if (n < code.length) {
@@ -54,24 +47,17 @@
 */
 
 .preview-wrapper .wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #84CEF5;
     z-index: -3;
 }
-
 .peppa-container {
     position: relative;
     width: 300px;
     height: 460px;
 }
-
 .peppa-container .peppa-head>div {
     position: absolute;
 }
-
 .peppa-head {
     position: relative;
     width: 250px;
@@ -82,6 +68,7 @@
 /*
 * 先画佩奇的头
 */
+
 .face {
     right: 0;
     top: 50px;
@@ -92,7 +79,6 @@
     border-radius: 220px 270px 260px 210px;
     transform: rotate(30deg);
 }
-
 .face::before {
     content: '';
     position: absolute;
@@ -102,10 +88,10 @@
     height: 100px;
     border: 6px solid #ef96c2;
     background-color: #FFB3DA;
-    border-radius: 150% 61% 0% 80%/130% 6% 0% 68%;
+    border-radius: 150% 61% 0% 80%
+    /130% 6% 0% 68%;
     transform: rotate(-5deg);
 }
-
 .face::after {
     content: '';
     position: absolute;
@@ -120,6 +106,7 @@
 /*
 * 然后再画佩奇的大鼻子
 */
+
 .nose {
     right: 190px;
     top: 20px;
@@ -130,12 +117,10 @@
     background-color: #FFB3DA;
     transform: rotate(36deg);
 }
-
 .nostril.left {
     left: 4px;
     top: 22px;
 }
-
 .nostril.right {
     left: 20px;
     top: 14px;
@@ -144,6 +129,7 @@
 /*
 * 接着帮佩奇画上两个鼻孔吧
 */
+
 .nostril {
     position: absolute;
     width: 12px;
@@ -151,7 +137,6 @@
     background: #DA6C9B;
     border-radius: 50%;
 }
-
 
 /*
 * 画佩奇的耳朵
@@ -162,18 +147,19 @@
     height: 64px;
     border: 6px solid #ef96c2;
     background-color: #FFB3DA;
-    border-radius: 50% 50% 50% 50%/ 35% 40% 50% 50%;
+    border-radius: 50% 50% 50% 50%
+    / 35% 40% 50% 50%;
 }
 
 /*
 * 把佩奇的耳朵放到正确的位置上
 */
+
 .ear.left {
     right: 72px;
     top: -6px;
     transform: rotate(20deg);
 }
-
 .ear.right {
     right: 28px;
     top: 18px;
@@ -192,7 +178,6 @@
     background-color: #fff;
     border-radius: 50%;
 }
-
 .eye::before {
     content: '';
     position: absolute;
@@ -203,11 +188,9 @@
     background-color: #000;
     border-radius: 50%;
 }
-
 .eye.left::before {
     left: -1px;
 }
-
 .eye.right {
     right: 85px;
     top: 53px;
@@ -216,6 +199,7 @@
 /*
 * 接着画一下佩奇的脸颊
 */
+
 .cheek {
     right: 20px;
     top: 114px;
@@ -229,19 +213,18 @@
 /*
 * 再接着画一下佩奇的嘴巴
 */
+
 .mouth {
     width: 97px;
     right: 73px;
     top: 152px;
     transform: rotate(18deg);
 }
-
 .mouth>div {
     position: absolute;
     left: 0;
     top: 0;
 }
-
 .mouth .mouth-bottom {
     width: 97px;
     height: 45px;
@@ -249,15 +232,14 @@
     background-color: #000;
     border-radius: 50%/0 0 100% 100%;
 }
-
 .mouth .mouth-middle {
     width: 97px;
     height: 27px;
     border: 6px solid #d44b81;
     background-color: #ffb3da;
-    border-radius: 0% 0% 50% 50%/ 0% 0% 100% 100%;
+    border-radius: 0% 0% 50% 50%
+    / 0% 0% 100% 100%;
 }
-
 .mouth .mouth-middle::before {
     content: '';
     position: absolute;
@@ -266,13 +248,12 @@
     width: 97px;
     height: 15px;
     background-color: #FFB3DA;
-    border-radius: 0% 0% 50% 50%/ 0% 0% 100% 100%;
+    border-radius: 0% 0% 50% 50%
+    / 0% 0% 100% 100%;
 }
-
 .peppa-body {
     position: relative;
 }
-
 .peppa-body>div {
     position: absolute;
 }
@@ -280,6 +261,7 @@
 /*
 * 终于，可以画佩奇的身体啦
 */
+
 .body {
     margin-left: 58px;
     width: 227px;
@@ -298,9 +280,9 @@
 .hand.left{
     width: 78px;
     height: 12px;
-    border-radius: 100% 100% 100% 17%/ 100% 90% 16% 90%;
+    border-radius: 100% 100% 100% 17%
+    / 100% 90% 16% 90%;
     background-color: #FFBADF;
-
 }
 
 /*
@@ -319,24 +301,24 @@
     position: absolute;
     background-color: #ffbadf;
 }
-
 .hand.left::before {
     
     width: 28px;
     height: 9px;
     top: -8px;
     left: 8px;
-    border-radius: 100% 100% 100% 35%/ 100% 90% 16% 90%;
+    border-radius: 100% 100% 100% 35%
+    / 100% 90% 16% 90%;
     background-color: #ffbadf;
     transform: rotate(28deg);
 }
-
 .hand.left::after {
     right: 46px;
     top: 8px;
     width: 20px;
     height: 9px;
-    border-radius: 60% 59% 65% 90%/ 100% 90% 89% 90%;
+    border-radius: 60% 59% 65% 90%
+    / 100% 90% 89% 90%;
     transform: rotate(139deg);
 }
 
@@ -347,7 +329,8 @@
 .hand.right {
     width: 78px;
     height: 12px;
-    border-radius: 100% 100% 15% 17%/ 99% 92% 90% 90%;
+    border-radius: 100% 100% 15% 17%
+    / 99% 92% 90% 90%;
     right: -32px;
     transform: rotate(28deg);
     background-color: #FFBADF;  
@@ -364,16 +347,17 @@
     top: 10px;
     width: 20px;
     height: 9px;
-    border-radius: 60% 59% 65% 90%/ 100% 90% 89% 90%;
+    border-radius: 60% 59% 65% 90%
+    / 100% 90% 89% 90%;
     transform: rotate(-139deg);
 }
-
 .hand.right::after {
     width: 28px;
     height: 9px;
     top: -8px;
     right: 5px;
-    border-radius: 100% 100% 100% 35%/ 100% 90% 16% 90%;
+    border-radius: 100% 100% 100% 35%
+    / 100% 90% 16% 90%;
     transform: rotate(-28deg);
 }
 
@@ -392,7 +376,6 @@
     border-radius: 50%;
     z-index: -2;
 }
-
 .tail::before {
     content: '';
     position: absolute;
@@ -404,7 +387,6 @@
     border-radius: 50%/ 0% 0% 100% 100%;
     transform: rotate(-9deg);
 }
-
 .tail-circle {
     box-sizing: content-box;
     position: absolute;
@@ -417,7 +399,6 @@
     border-radius: 100% 0 0 100%/50%;
     transform: rotate(-102deg);
 }
-
 .tail-circle::after {
     content: '';
     position: absolute;
@@ -428,12 +409,10 @@
     background-color: #FFBADF;
     border-radius: 4px;
 }
-
 .peppa-footer {
     position: absolute;
     top: 376px;
 }
-
 .peppa-footer>div {
     position: absolute;
 }
@@ -445,17 +424,16 @@
 .foot.left {
     left: 125px;
 }
-
 .foot.right {
     left: 218px;
 }
-
 .foot {
     top: 0;
     width: 11px;
     height: 52px;
     background-color: #FFBADF;
-    border-radius: 0 0 10% 0 / 0 0 10% 0;
+    border-radius: 0 0 10% 0 
+    / 0 0 10% 0;
 }
 
 /*
@@ -465,22 +443,22 @@
 .shoes.left {
     left: 90px;
 }
-
 .shoes.right {
     left: 182px;
 }
-
 .shoes {
     top: 40px;
     width: 51px;
     height: 14px;
-    border-radius: 58% 187% 180% 50%/ 130% 123% 113% 100%;
+    border-radius: 58% 187% 180% 50%
+    / 130% 123% 113% 100%;
     background-color: #000;
 }
 
 /*
 *最后来个背影，完美
 */
+
 .peppa-shadow {
     left: 52px;
     top: 20px;
