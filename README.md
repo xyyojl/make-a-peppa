@@ -3,8 +3,7 @@
 下面是我项目的代码和预览链接，觉得项目好看又实用的小伙伴，随手给个star, 您的star是我最大的动力！！！<br>
 [项目源码](https://github.com/xyyojl/make-a-peppa) [预览链接](https://xyyojl.github.io/make-a-peppa/index.html)
 
-移动端实现效果的展示
-<video src="peppa.mp4"></video>
+[移动端实现效果的展示](https://github.com/xyyojl/make-a-peppa/blob/master/peppa.mp4)，点击download下载观看
 
 这一项目的主题的是画一只小猪佩奇给你贺新年，好了，废话不多说，我们进入正题：
 
