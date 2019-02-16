@@ -1,6 +1,6 @@
 # 小猪佩奇 贺新年
 
-下面是我项目的代码和预览链接，觉得项目好看又实用的小伙伴，随手给个star, 您的star是我最大的动力！！！
+下面是我项目的代码和预览链接，觉得项目好看又实用的小伙伴，随手给个star, 您的star是我最大的动力！！！<br>
 [项目源码](https://github.com/xyyojl/make-a-peppa) [预览链接](https://xyyojl.github.io/make-a-peppa/index.html)
 
 移动端实现效果的展示
