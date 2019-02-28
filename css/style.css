@@ -315,8 +315,8 @@
 .actions > button.active{
     opacity: 0.5;
 }
-/* 移动端 */
 
+/* 移动端 */
 @media screen and (max-width: 768px) {
     body{
         display: flex;
@@ -377,13 +377,3 @@
         margin-right: 0;
     }
 }
-/* .preview-wrapper{
-    transform: scale(0.8) translateY(-50px);
-} */
-
-/* .wrapper {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
