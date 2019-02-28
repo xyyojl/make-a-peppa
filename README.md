@@ -120,3 +120,5 @@ http-server -c -1
 - [用CSS画小猪佩奇，你就是下一个社会人！](https://cloud.tencent.com/developer/article/1128472)
 - [Chrome 66禁止声音自动播放之后](https://juejin.im/post/5af7129bf265da0b8262df4c)
 - [初识移动端](https://yk1062008412.github.io/2018/05/24/%E5%88%9D%E8%AF%86%E7%A7%BB%E5%8A%A8%E7%AB%AF/)
+
+本文为区家乐的原创文章，著作权归本人和饥人谷所有，转载务必注明来源
