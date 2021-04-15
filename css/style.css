@@ -317,6 +317,7 @@
 }
 
 /* 移动端 */
+/* 当页面宽度小于 768px 的时候执行下面的 CSS */
 @media screen and (max-width: 768px) {
     body{
         display: flex;
@@ -363,6 +364,7 @@
         right: 7px;
     }
 }
+/* 当页面宽度小于 320 px 的时候执行下面的 CSS */
 @media screen and (max-width: 320px) {
     .code-wrapper,
     #code {

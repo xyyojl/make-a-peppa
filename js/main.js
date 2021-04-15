@@ -5,10 +5,8 @@ $('.mask button').on('click',function(){
     player.play();
     let duration = 30;
     $('.actions').on('click','button',function(e){
-        console.log(1)
         let $button = $(e.currentTarget);
         let speed = $button.attr('data-speed');
-        // console.log(speed);
         $button.addClass('active').siblings('.active').removeClass('active');
         switch (speed) {
             case 'slow':
@@ -18,7 +16,8 @@ $('.mask button').on('click',function(){
                 duration = 30;
                 break;
             case 'fast':
-                duration = 10;
+                // duration = 10;
+                duration = 5;
                 break;
         }
     })
@@ -295,8 +294,7 @@ $('.mask button').on('click',function(){
 
 /* 
 * 好了，这只小猪佩奇送给你，喜欢吗？
-* 小猪佩奇给大家贺新年,猪事顺利，猪笼入水!
-* 重新修改时间：2019/2/28 
+* 喜欢，点个赞吧
 * 作者：区家乐
 * 邮箱：m13631895256@163.com
 * 仓库：https://github.com/xyyojl/make-a-peppa
